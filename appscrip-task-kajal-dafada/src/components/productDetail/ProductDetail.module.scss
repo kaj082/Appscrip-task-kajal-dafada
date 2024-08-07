@@ -1,0 +1,105 @@
+.ProductDetail {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+
+  .imageContainer {
+    width: 100%;
+    height: 399;
+    position: relative;
+    .tag {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: Simplon Norm;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 40px;
+      text-align: left;
+      text-transform: capitalize;
+      color: #000;
+    }
+    .outOfStock {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #ffffff;
+      font-family: Simplon Norm;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 40px;
+      text-align: left;
+      width: 100%;
+      margin: 0 auto;
+      padding-block: 15px;
+      text-align: center;
+    }
+    .image {
+      background-color: #fcfcfc;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+    @media (max-width: 750px) {
+      height: 224px;
+    }
+  }
+  .detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .desc {
+      width: calc(100% - 24px);
+
+      .description {
+        font-family: Simplon Norm;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+        color: #888792;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media (max-width: 750px) {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+      .title {
+        margin-bottom: 8px;
+        font-family: Simplon Norm;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+        text-align: left;
+        color: #000;
+        width: calc(100% - 24px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media (max-width: 750px) {
+          font-size: 14px;
+          line-height: 16.8px;
+          margin-bottom: 4px;
+        }
+      }
+
+      @media (max-width: 750px) {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    width: 224px;
+  }
+}

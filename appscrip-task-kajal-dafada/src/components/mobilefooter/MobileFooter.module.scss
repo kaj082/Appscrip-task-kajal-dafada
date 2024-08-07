@@ -1,0 +1,186 @@
+.MobileFooter {
+  width: 100%;
+  height: fit-content;
+  padding-inline: 16px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+
+  .title {
+    font-family: Simplon Norm;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .leftPart {
+    padding-block: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    .title {
+      margin-bottom: 8px;
+    }
+    .description {
+      font-family: Simplon Norm;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .inputBtn {
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      width: 100%;
+
+      .input {
+        all: unset;
+        height: 47px;
+        width: 100%;
+        padding-inline: 24px;
+        background: #ffffff;
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: #bfc8cd;
+      }
+      .btn {
+        all: unset;
+        width: fit-content;
+        padding-inline: 14.5px;
+        //   padding-block: 13px;
+        height: 48px;
+        border-radius: 5px;
+        border: 1.14px solid rgba($color: #ffffff, $alpha: 0.3);
+        //   opacity: 0.3;
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        text-align: left;
+        color: rgba($color: #ffffff, $alpha: 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000000;
+      }
+    }
+  }
+  .rightPart {
+    width: 100%;
+    .title {
+      margin-bottom: 16px;
+    }
+    .detail {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #ffffff;
+
+      .phone {
+        font-family: Simplon Norm;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+        color: #ffffff;
+      }
+      .star {
+        width: 6px;
+        height: 6px;
+        transform: rotate(136deg);
+        background-color: #ffffff;
+      }
+      .email {
+        font-family: Simplon Norm;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+  }
+  .part1 {
+    width: 100%;
+    // padding-bottom: 24px;
+    // margin-bottom: 24px;
+    // border-bottom: 1px solid #ffffff;
+
+    .title {
+      font-family: Simplon Norm;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+      text-align: left;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+    .detail {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #ffffff;
+
+      .phone {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .star {
+        width: 6px;
+        height: 6px;
+        transform: rotate(136deg);
+        background-color: #ffffff;
+      }
+      .email {
+        font-family: Simplon Norm;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.8px;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+  }
+  .part5 {
+    width: 100%;
+    margin-bottom: 24px;
+
+    .title2 {
+      font-family: Simplon Norm;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.8px;
+      text-align: left;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+  }
+  .copyText {
+    font-family: Simplon Norm;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 23px;
+  }
+
+  @media (max-width: 750px) {
+    display: flex;
+  }
+}

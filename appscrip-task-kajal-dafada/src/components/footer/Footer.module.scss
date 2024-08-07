@@ -1,0 +1,213 @@
+.footer {
+  padding-left: 8.8%;
+  padding-right: 4.4%;
+  width: 100%;
+  background-color: #000000;
+
+  .title {
+    font-family: Simplon Norm;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #fff;
+  }
+  .upperCOntainer {
+    width: 100%;
+    padding-top: 79px;
+    height: fit-content;
+    display: flex;
+    // column-gap: 12.22%;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 26px;
+
+    .leftPart {
+      padding-bottom: 73px;
+      width: 40%;
+      .title {
+        margin-bottom: 24px;
+      }
+      .description {
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 51px;
+      }
+      .inputBtn {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        width: 100%;
+
+        .input {
+          all: unset;
+          height: 47px;
+          //   width: 384px;
+          width: 65%;
+          padding-inline: 24px;
+          background: #ffffff;
+          font-family: Simplon Norm;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21.6px;
+          text-align: left;
+          color: #bfc8cd;
+        }
+        .btn {
+          all: unset;
+          width: fit-content;
+          padding-inline: 47px;
+          //   padding-block: 13px;
+          height: 48px;
+          border-radius: 5px;
+          border: 1.14px solid rgba($color: #ffffff, $alpha: 0.3);
+          //   opacity: 0.3;
+          font-family: Simplon Norm;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 21.6px;
+          text-align: left;
+          color: rgba($color: #ffffff, $alpha: 0.3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #000000;
+        }
+
+        @media (max-width: 1050px) {
+          flex-direction: column;
+          row-gap: 16px;
+          align-items: flex-start;
+
+          .input {
+            width: 65%;
+          }
+        }
+      }
+    }
+
+    .rightPart {
+      width: fit-content;
+
+      .title {
+        margin-bottom: 16px;
+      }
+      .phone {
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 16px;
+      }
+      .email {
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 24px;
+      }
+
+      .desc {
+        font-family: Simplon Norm;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: left;
+        color: #ffffff;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .lowerContainer {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-family: Simplon Norm;
+      font-size: 24.71px;
+      font-weight: 700;
+      line-height: 29.66px;
+      text-align: left;
+      color: #fff;
+    }
+    .item {
+      font-family: Simplon Norm;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: left;
+      color: #fff;
+    }
+
+    .part1 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      .title {
+      }
+      .itemList {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        list-style: none;
+        .item {
+        }
+      }
+    }
+    .part2 {
+      display: flex;
+      flex-direction: column;
+      .title {
+        margin-bottom: 24px;
+      }
+      .itemList {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        list-style: none;
+        .item {
+        }
+      }
+    }
+    .part3 {
+      .icons {
+        margin-top: 24px;
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 56px;
+      }
+      .title2 {
+        font-family: Simplon Norm;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .copyText {
+    margin-top: 37px;
+    padding-bottom: 25px;
+    font-family: Simplon Norm;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  @media (max-width: 750px) {
+    display: none;
+  }
+}

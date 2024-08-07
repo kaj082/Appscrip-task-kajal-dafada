@@ -1,0 +1,123 @@
+.ProductSection {
+  width: 100%;
+  column-gap: 16px;
+  .header {
+    height: 88px;
+    // width: 100%;
+    margin-inline: 6.66%;
+    padding-block: 24px;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      column-gap: 80px;
+      .totalItem {
+        font-family: Simplon Norm;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: left;
+        color: #252020;
+      }
+      .btn {
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        .btnText {
+          all: unset;
+          text-decoration: underline;
+          font-family: Adobe Caslon Pro;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 40px;
+          text-align: right;
+          color: #888792;
+        }
+      }
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
+    .filterText {
+      font-family: Simplon Norm;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.8px;
+      text-align: left;
+      width: 50%;
+      border-right: 1px solid #fff;
+      display: none;
+
+      @media (max-width: 750px) {
+        display: block;
+      }
+    }
+    @media (max-width: 750px) {
+      padding-inline: 0;
+      padding-block: 12px;
+    }
+  }
+  .product {
+    width: 100%;
+    padding-inline: 6.66%;
+    margin-top: 32px;
+    display: flex;
+    .sideDrawer {
+      width: 300px;
+      height: fit-content;
+
+      transition: all 0.1 ease-in-out;
+
+      .lable {
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: #252020;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+
+        .input {
+          width: 18px;
+          height: 18px;
+          border: 0.75px solid #4d4d4d;
+        }
+      }
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
+    .show {
+      display: none;
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
+    .productList {
+      width: fit-content;
+      margin-bottom: 39px;
+      display: flex;
+      align-items: center;
+      //   justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 16px;
+      row-gap: 32px;
+      @media (max-width: 750px) {
+        column-gap: 8px;
+        row-gap: 16px;
+        width: 100%;
+        padding-inline: 16px;
+      }
+    }
+
+    @media (max-width: 750px) {
+      column-gap: 0px;
+      margin-top: 0;
+    }
+  }
+}
