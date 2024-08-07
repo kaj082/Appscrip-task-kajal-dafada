@@ -87,7 +87,12 @@ const ProductSection = () => {
         </div>
         <div className={styles.productList}>
           {products.map((item, index) => (
-            <ProductDetail key={`${item}index`} data={item} />
+            <ProductDetail
+              key={`${item}index`}
+              data={item}
+              newProduct={index == 0}
+              outOfStock={index == 6}
+            />
           ))}
         </div>
       </div>
