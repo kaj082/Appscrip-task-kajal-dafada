@@ -24,6 +24,11 @@
         text-align: left;
         color: #bfc8cd;
       }
+      .line {
+        height: 14px;
+        width: 1px;
+        background-color: #bfc8cd;
+      }
 
       .shop {
         font-family: Simplon Norm;
@@ -36,6 +41,7 @@
 
       @media (max-width: 750px) {
         display: flex;
+        align-items: center;
       }
     }
 
@@ -62,7 +68,7 @@
 
       .title {
         width: 100%;
-        font-size: 24px;
+        // font-size: 24px;
       }
       .subTitle {
         width: 100%;

@@ -13,10 +13,19 @@ import {
   RecommendedDropDown,
   TitleWithIcon,
 } from "@/src/components";
+import { useProductStore } from "@/src/store/ProductStore";
+import { useEffect } from "react";
+import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const Home = ({ initialProducts }) => {
+  const setProducts = useProductStore((state) => state.setProducts);
+
+  useEffect(() => {
+    setProducts(initialProducts);
+  }, [initialProducts, setProducts]);
+
   return (
     <>
       <Head>
@@ -29,10 +38,31 @@ export default function Home() {
         <Header />
         <HeroSection />
         <ProductSection />
-
         <Footer />
         <MobileFooter />
       </main>
     </>
   );
-}
+};
+
+export const getServerSideProps = async () => {
+  try {
+    const response = await axios.get("https://fakestoreapi.com/products");
+    const initialProducts = response.data;
+
+    return {
+      props: {
+        initialProducts,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching the products:", error);
+    return {
+      props: {
+        initialProducts: [],
+      },
+    };
+  }
+};
+
+export default Home;

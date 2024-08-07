@@ -1,25 +1,30 @@
 import { Heart, Like } from "@/src/icons";
 import Image from "next/image";
 import React, { useState } from "react";
-import styles from './ProductDetail.module.scss'
+import styles from "./ProductDetail.module.scss";
 
-const ProductDetail = () => {
+const ProductDetail = ({ data, newProduct = false, outOfStock = false }) => {
   const [add, setAdd] = useState(false);
   const handleLike = () => {
     setAdd(!add);
   };
+  console.log(data, "-----");
   return (
     <div className={styles.ProductDetail}>
       <div className={styles.imageContainer}>
-        <p className={styles.tag}>new product</p>
-        <p className={styles.outOfStock}>out of stock</p>
-        <Image className={styles.image} width={300} height={399} />
+        {newProduct && <p className={styles.tag}>new product</p>}
+        {outOfStock && <p className={styles.outOfStock}>out of stock</p>}
+        <Image
+          className={styles.image}
+          alt={data?.title}
+          width={300}
+          height={399}
+          src={data?.image}
+        />
       </div>
       <div className={styles.detail}>
         <div className={styles.desc}>
-          <p className={styles.title}>
-            PPXOC Milkyway dress in pressed flowers
-          </p>
+          <p className={styles.title}>{data?.title}</p>
           <p className={styles.description}>
             <a href="/"> Sign in</a> or Create an account to see pricing
           </p>

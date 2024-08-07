@@ -52,6 +52,12 @@
       align-items: center;
       justify-content: space-between;
       list-style-type: none;
+      &:hover {
+        cursor: pointer;
+      }
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     @media (max-width: 750px) {
@@ -109,6 +115,9 @@
       line-height: 24px;
       letter-spacing: 1px;
       text-align: left;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     @media (max-width: 750px) {

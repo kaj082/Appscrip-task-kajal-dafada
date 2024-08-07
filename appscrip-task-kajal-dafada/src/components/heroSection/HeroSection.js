@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className={styles.main}>
         <div className={styles.subSection}>
           <p className={styles.home}>HOME</p>
-          <div className={styles.line}>|</div>
+          <div className={styles.line}></div>
           <p className={styles.shop}>SHOP</p>
         </div>
         <h2 className={styles.title}>DISCOVER OUR PRODUCTS</h2>

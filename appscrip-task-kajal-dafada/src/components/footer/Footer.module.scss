@@ -76,6 +76,9 @@
           align-items: center;
           justify-content: center;
           background: #000000;
+          &:hover {
+            cursor: pointer;
+          }
         }
 
         @media (max-width: 1050px) {
@@ -92,6 +95,9 @@
 
     .rightPart {
       width: fit-content;
+      &:hover {
+        cursor: pointer;
+      }
 
       .title {
         margin-bottom: 16px;
@@ -146,6 +152,9 @@
       line-height: 21.6px;
       text-align: left;
       color: #fff;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .part1 {

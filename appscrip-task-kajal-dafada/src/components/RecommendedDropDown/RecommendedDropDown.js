@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import styles from "./RecommendedDropDown.module.scss";
 import { ArrowDown, Check } from "@/src/icons";
 import cx from "classnames";
+import { useProductStore } from "@/src/store/ProductStore";
+import { sortProducts } from "@/src/helper/generalHelper";
 
 const RecommendedDropDown = () => {
+  const { products, setProducts } = useProductStore((state) => ({
+    products: state.products,
+    setProducts: state.setProducts,
+  }));
   const tags = [
     "Recommended",
     "Newest first",
@@ -17,6 +23,8 @@ const RecommendedDropDown = () => {
 
   const handleActive = (index) => {
     setActive(index);
+    const data = sortProducts(products, tags[index]);
+    setProducts(data);
     setShow(false); // Optionally close the dropdown on selection
   };
 

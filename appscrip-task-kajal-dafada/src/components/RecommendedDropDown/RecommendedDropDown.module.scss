@@ -17,6 +17,15 @@
         font-weight: 700;
         line-height: 40px;
         text-align: left;
+        color: black;
+
+        @media (max-width: 750px) {
+          font-family: Simplon Norm;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 16.8px;
+          text-align: left;
+        }
       }
 
       .arrow {
@@ -25,6 +34,9 @@
 
       .downArrow {
         transform: rotate(180deg);
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
 
@@ -78,6 +90,9 @@
         .active {
           font-weight: 700;
         }
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
   }
